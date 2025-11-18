@@ -30,7 +30,7 @@ resource "aws_subnet" "west_public_subnet" {
   provider          = aws.west
   vpc_id            = aws_vpc.west_vpc.id
   cidr_block        = "10.1.1.0/24"
-  availability_zone = "us-west-1b"
+  availability_zone = "us-west-1a"
   depends_on = [
     aws_vpc.west_vpc
   ]
@@ -44,7 +44,7 @@ resource "aws_subnet" "west_private_subnet" {
   provider   = aws.west
   vpc_id     = aws_vpc.west_vpc.id
   cidr_block = "10.1.2.0/24"
-  # availability_zone = "us-west-1b"
+  # availability_zone = "us-west-1a"
   depends_on = [
     aws_vpc.west_vpc
   ]
