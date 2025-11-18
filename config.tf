@@ -1,4 +1,5 @@
 module "config" {
+  count = 0
   source  = "trussworks/config/aws"
   version = "8.1.0"
   config_logs_bucket = "awsconfigrecorderbucket"
