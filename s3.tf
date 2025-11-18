@@ -1,5 +1,5 @@
 resource "aws_s3_bucket" "config_recorder" {
-  bucket = "awsconfigrecorderbucket"
+  bucket = "awsconfigrecorderbucket_new"
   force_destroy = true
 
   tags = {
