@@ -1,4 +1,4 @@
 variable "environment" {
   type = string
-  default="Dev\Test"
+  default="Dev/Test"
 }
